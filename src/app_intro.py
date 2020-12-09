@@ -23,7 +23,7 @@ else:
 
 for num in range(1, 10, 3):
     print("Attempt", num, num * '.')
-    print(f"Val is {num} and attempt {num + 1} times")
+    print("Val is {num} and attempt {num + 1} times")
 
 for char in patient_name:
     print(char)
