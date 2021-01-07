@@ -130,3 +130,12 @@ dmypy.json
 
 #idea files
 .idea/
+
+#eclipse and robot
+.DS_Store
+.project
+.pydevproject
+log.html
+output.xml
+report.html
+

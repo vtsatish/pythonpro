@@ -1,3 +1,5 @@
+from Library import pylib
+
 print('welcome to the world of: \n')
 
 friends = ['john', 'pat', 'gary', 'michael']
@@ -7,5 +9,8 @@ for i, name in enumerate(friends):
 print('Python')
 
 print('\n stay strong and learn')
+
+print(str(pylib.fileExists("Library/test_simple.txt")))
+
 
 

@@ -10,6 +10,7 @@ def get_greeting(name):
 
 
 def get_multiply(*num_list):
+    print(f"this returns the factorial")
     print(type(num_list))
     total = 1
     for num in num_list:
