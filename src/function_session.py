@@ -32,13 +32,7 @@ def get_fact(num):
             counter += 1
         print("The factorial of ", num , " is ", product)
             
-        
-    
 
-def get_even_list(num_list):
-    print(type(num_list))
-    print(f"received list is {num_list}")
-    return num_list[::2]
 
 
 def word_count(sent):
@@ -88,8 +82,6 @@ def char_frequency(sent):
 print_greeting("New name")
 print(get_greeting("test message"))
 print(get_multiply(1, 2, 3, 4))
-# print even through func
-print("Event numbers are : ", get_even_list(list(range(50))))
 word_count("Hello this is not a Hello but this is Hi")
 char_frequency("Hello this is not a Hello but this is Hi ieieieieieieieieieieieieieieieieieieieieieieieieie")
 
