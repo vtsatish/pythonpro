@@ -36,7 +36,7 @@ def get_fact(num):
 
 
 def word_count(sent):
-    print(f"received sentence is : {sent}")
+    print(f"received sentence is : {sent}\n")
     words = sent.split(" ")
     wc_dict = {}
     for word in words:
@@ -50,7 +50,7 @@ def word_count(sent):
 
 
 def char_frequency(sent):
-    print(f"received sentence is: {sent}")
+    print(f"received sentence is: {sent}\n")
     char_freq_dict = {}
     for char in sent:
         if char in char_freq_dict:
@@ -60,20 +60,18 @@ def char_frequency(sent):
             
     print("unsorted dict of chars is ", char_freq_dict)
     
-
+    #remove the item ' '
+    char_freq_dict.pop(' ')
+    
+    #sorted returns a list with tuples of char and count
     char_freq_sorted_list = sorted(char_freq_dict.items(),
                                    key=lambda item: item[1],
                                    reverse=True)
+    
 
-    for i in range(len(char_freq_sorted_list)-1):
-        my_tuple = char_freq_sorted_list[i]
-        print("***",my_tuple,"***")
-        if my_tuple[0] == ' ':
-            char_freq_sorted_list.pop(i)
-            break
-    print("sorted dict with out \' \'", char_freq_sorted_list)
+    print("\nsorted dict with out \' \'", char_freq_sorted_list)
 
-    print("The most repeated character apart from \' \' is",
+    print("\nThe most repeated character apart from \' \' is",
           char_freq_sorted_list[0])
 
 
