@@ -20,8 +20,8 @@ def dict_test():
     print(classLevel[0])
     #dict for loop
     for key in states:
-        print(key)
-        print(states[key])
+        print("key is", key)
+        print("value is", states[key])
 def files_test():
     filepath = "newfile.txt"
     outfile = open(filepath,"w")
@@ -38,6 +38,7 @@ def files_test():
     infile.close()
     time.sleep(5)
     #delete file
+    print("file location", os.getcwd(), filepath)
     os.remove(filepath)
     
     
