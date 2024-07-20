@@ -1,6 +1,6 @@
 import os
 import time
-from pip._vendor.distlib._backport.tarfile import _FileInFile
+
 #functions
 def list_test():
     list_var = [20, 40, 60, 80]
