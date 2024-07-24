@@ -1,4 +1,5 @@
 import processMod
+import os
 from ClassProvider import StudentProvider,ExamProvider
 
 #wrong call
@@ -23,6 +24,19 @@ print(sa.getRank())
 ec = ExamProvider("new student",5,"hyd")
 ec.display()
 ec.moredisplay()
+
+
+#system calls
+
+command = "dir"
+os.system(command)
+# Capture the output of the command using subprocess
+result = os.popen(command).read()
+
+# Print the result
+print("Output from command:", result)
+
+os.system("cd")
 
 
     
