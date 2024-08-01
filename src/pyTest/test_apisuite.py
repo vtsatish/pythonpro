@@ -1,4 +1,6 @@
 import requests
+from assertpy.assertpy import assert_that
+from lxml import etree
 import wheel
 
 
@@ -30,4 +32,5 @@ def test_api_post():
     resp_data = resp.json()
     print(resp_data)
     assert resp.status_code == 201
+    assert_that(resp_data['id']).is_not_none()
 
